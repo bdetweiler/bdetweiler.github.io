@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Brian Detweiler</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Brian Detweiler</h1>
+        <p>From Computer Science to Data Science</p>
+
+        <p class="view"><a href="http://about.me/briandetweiler">About Me</a></p>
+        <p class="view"><a href="http://bdetweiler.github.io/projects">Projects</a></p>
+        <p class="view"><a href="http://github.com/bdetweiler">/src</a></p>
+        <p class="view"><a href="http://twitter.com/detweiler">@detweiler</a></p>
+
+      </header>
+      <section>
+        <h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+          Brad Evans Analysis
+        </h3>
+
+        For this project, I aim to statistically analyze fantasy football prognosticator "Yahoo! Noise" <a href="https://twitter.com/yahoonoise">Brad Evans</a>. 
+      
+        First, I will start off by answering some imagined questions.
+      </section>
+        
+      <section>
+        <h4>Who is Brad Evans?</h4>
+
+        <img src="images/brad-evans.jpg"><br />
+        <p><i>...and why are you harassing him?</i></p>
+        <p>Brad Evans is a colorful and entertaining fantasy football guru at Yahoo! Fantasy Sports. He writes several columns on 
+        <a href="http://sports.yahoo.com/blogs/fantasy-roto-arcade/">Fantasy Roto Arcade</a>, including one of interest, the <b>Flames/Lames</b> column, where he picks the most overrated and 
+        underrated fantasy players respectively and justifies why he thinks they will blow your mind/fail you miserably.</p>
+
+        <p>There are a few reasons why I am singling out Brad rather than doing a side-by-side comparison of all gurus (something I would love to do, btw).<p>
+        <p>First of all, this started out as a single question: "I wonder how often Brad actually gets it right?" 
+        I wondered this because I had followed Brad's picks before, thinking I had an ace up my sleeve. 
+        Those picks cost me $40 and my pride. But since then, I have dabbled in sports betting and the stock market as well, 
+        other common places you'll find "picker" services. Some of these are free, some are subscription based. After enough pain with losing money, I began to see the light. 
+        To win in arenas like this, you have to be right more than half of the
+        time. And generally, these services do not come close to winning more often than they lose.</p>
+        <p>So I began to wonder how good Brad actually is.</p>
+        <p>The second thing that sparked the need to analyze was Brad's <b>Flames/Lames</b> column which is in a fairly consistent format week to week, and seemed an obvious 
+        candidate for data wrangling.</p>
+
+      </section>
+
+      <section>
+        <h4>Gathering Data</h4>
+
+        <p>Wrangling the data was a lot more painful than I thought it would be. I started this project on October 12th, 2015, at which point Week 4 of the 2015 season had finished up. I set my stake
+        in the ground there, and did my best to go back to the beginning of time, or at least the beginning of the Flames/Lames column and collect everything Brad ever wrote about some improbable
+        outcome. My biggest hurdle was Yahoo!'s terrible website. There's no way to go back to specific dates or articles or anything. They implemented infinite scrolling (which is not infinite,
+        btw), which prevents me from going back too far.<p>
+
+        <p>At that point, I began Googling (yes, Googling Yahoo! pages. I love the irony). I also searched Brad's Twitter account, because he usually shares the link there when he has a new article
+        out. Finally, the <a href="http://archive.org">Internet Archive</a> had a few pages in its database as well. I was fairly successful with these methods, but there a number of gaps in my analysis. Those gaps include:</p>
+        <ul>
+          <li>
+            2009, Week 8, Flames/Lames
+          </li>
+          <li>
+            2009, Week 9, Flames/Lames
+          </li>
+          <li>
+            2009, Week 10, Flames/Lames
+          </li>
+          <li>
+            2010, Week 12, Flames
+          </li>
+          <li>
+            2010, Week 14, Lames
+          </li>
+          <li>
+            2010, Week 15, Flames/Lames
+          </li>
+          <li>
+            2010, Week 16, Flames/Lames
+          </li>
+          <li>
+            2011, Week 6, Flames
+          </li>
+          <li>
+            2011, Week 12, Lames
+          </li>
+        </ul>
+        <p>These articles I cannot seem to find anywhere, so if you have them, feel free to send me the links, or submit a pull request on GitHub. Anything after 2015 week 4 is not present either,
+        because that is when I began the project. Wrangling the data would have taken a lot of effort to automate, so keeping these up to date week to week seems like overkill for a simple analysis
+        project.</p>
+        <p>Once I had the Flames/Lames articles, I saved them all to my local drive. Then I skimmed them down to just a text representation into two files for each year/week, 
+        one called "flames.txt" and one called "lames.txt". I corrected for inconsistencies and got everything into a parsable format. Thankfully, Brad was fairly consistent from year to year. 
+        It was Yahoo!'s website that suffered from inconsistencies.</p>
+
+        <p>From week to week, Brad grades himself, but I noticed he has kind of a weird grading scale, and his grades are a screenshot of an Excel sheet, which doesn't help me much.
+        So to be more accurate, I decided I needed actual NFL data. That doesn't come easy or cheap, so I had to get it myself. I devised a scraping method for NFL.com and created a SQLite
+        database. You can download my <a href="https://github.com/bdetweiler/nfl-database">NFL Database here</a>. It only contains offensive player stats, and it's missing a lot of information.
+        I should have used ESPN.com as a basis, because their data is actually more complete than the NFL's own website, but I only realized this after I had finished that project.</p>
+      </section>
+      <section>
+        <h4>Analysis</h4>
+
+        <p>The analysis I ran was fairly straightforward. I started off by just viewing some of the raw details about his posts alone.</p>
+        <p>
+          <img src="images/top-players-flames.png"><br />
+          <img src="images/top-players-lames.png"><br />
+          Brad clearly loves Carson Palmer and hates Tom Brady. I can understand that.
+        </p>
+        <p>
+          Another thing I wondered was whether Brad targeted certain individuals in both categories (Flames and Lames). 
+          <img src="images/flames-lames-joint-appearances.png"><br />
+          It's a little cluttered, but we can see that Ryan Matthews is the most evenly distributed, with 5 Flames and 6 Lames appearances. But Chris Johnson has made 12 appearances in the Lames
+          column, and just one in Flames. This is probably deserved. CJ2K, or CJ2Lame as Brad used to quip, ruined a lot of people's fantasy hopes year after year (I am in that group). 
+        </p>
+        <p>
+          Looking at the spread of the data, the Flames look to be hovering closer to Lame territory than I would like. The red dot is the mean, and the red line is the median. <br />
+          <img src="images/flames-box-plot.png"><br />
+          Lames looks to be a little tighter, which is what we want. Less variability means more predictability. One thing that didn't make it on the chart here, is Doug Martin's 2012-11-04 game
+          against the Raiders where he put up a ridiculous 51 fantasy points. Brad had him on the Lames list. That was a major outlier, however. A true Black Swan. <br />
+          <img src="images/lames-box-plot.png"><br />
+        </p>
+        <p>
+          Next, I wondered what the distribution of actual fantasy points for each category looked like. I hypothesized that if Brad was right more often than wrong, then the distributions, plotted
+          on top of each other should look like two camel humps. The Lames should be closer to 0, and the Flames should be toward the teens.
+          <br />
+          (The <span style="color: red">Flames are in Red</span>, and the <span style="color: blue">Lames are in Blue</span>)
+          <img src="images/flames-lames-actual-fantasy-points-distribution.png"><br />
+          But what we have here, is two similar distributions, with the Lames favoring larger scores. Hrm. Could Brad be wrong a lot of the time?
+        </p>
+        <p>
+          "Winning" is a relative term here, because fantasy points are a continuous random variable, not a Bernoulli trial. We can, however, draw a line in the sand and turn it into Bernoulli
+          trials. Let's take into account what Brad is doing here. He is looking for undervalued and overvalued players. To me, if a player is under 50% started in Yahoo! leagues and can score two
+          touchdowns, that is a win. So here, I chose 12 or more actual fantasy points as a win for the Flames. Likewise, I would call less than 10 points a bust for most players, particularly if
+          they are generally regarded as a "stud".
+          <br />
+          Using these metrics, we get an answer. 
+          <img src="images/flames-win-lose.png"><br />
+          <img src="images/lames-win-lose.png"><br />
+        </p>
+        <p>
+          Obviously, Brad is a much better short seller than a buyer. Things get a little worse when you look at his "Shocker Specials" (usually around 0% to 5% started) by themselves.
+          <br />
+          <img src="images/flames-shocker-special-distribution.png"><br />
+          <img src="images/flames-shocker-special-win-lose.png"><br />
+          Note: Shocker Specials only come in the Flames variety.<br />
+          These are actually better than I would expect. Start percentages that low indicate extreme undervaluing. If you were desperate to make a play, you've got a 30% chance of pulling it off with a
+          Shocker Special.
+        </p>
+        <p>
+          Finally, I wanted to know what his year-over-year percentages looked like.
+          <br />
+          <img src="images/flames-lames-win-percentage-by-year.png"><br />
+          Flames never seem to crack the 30% range. If you're wondering how his total average is 32.6%, it's because his 2015 picks up to week 4 had been really good. Like, 71.4% good. But with only
+          4 weeks in the 2015 season, I can't compare it to the other years which are nearly complete (minus the aforementioned gaps in data). 
+        </p>
+
+      </section>
+      <section>
+        <h4>Conclusion</h4>
+
+        <p>I'm actually surprised by my findings. Brad is a really good short seller. It would actually behoove you to at least keep an eye on his Lames column. Over half of all 
+        players on his Lames list score below 10 fantasy points. Those are pretty good odds, considering Brad only targets players who are at least 50% started in Yahoo! leagues. 
+        If you're starting one of his Lames players, you should do so with caution.</p>
+        <p>His Flames, however, should be considered more of a desperation play. If you're in dire straits though, the Shocker Specials do nearly as well as his regular Flames, so they may be worth the
+        30% dice roll.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
