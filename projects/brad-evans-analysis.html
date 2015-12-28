@@ -15,11 +15,18 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Brian Detweiler</h1>
-        <p>From Computer Science to Data Science</p>
+        <div id="header-title">
+          <!-- TODO: Need to make this clickable (home) but font still be black  -->
+          <!-- TODO: I would like a kind of gradiant black hole on the page maybe. -->
+          <h1>Into the Darkness</h1>
+        </div>
 
-        <p class="view"><a href="http://about.me/briandetweiler">About Me</a></p>
-        <p class="view"><a href="http://bdetweiler.github.io/projects">Projects</a></p>
+        <p><i>When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again.</i></p>
+        <p style="text-align: right">Carl Friedrich Gauss</p>
+
+        <p class="view"><a href="http://about.me/briandetweiler">About Brian Detweiler</a></p>
+        <p class="view"><a href="projects.html">Projects</a></p>
+        <p class="view"><a href="../blog.html">Blog</a></p>
         <p class="view"><a href="http://github.com/bdetweiler">/src</a></p>
         <p class="view"><a href="http://twitter.com/detweiler">@detweiler</a></p>
 
@@ -29,10 +36,7 @@
           <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
           Brad Evans Analysis
         </h3>
-
-        For this project, I aim to statistically analyze fantasy football prognosticator "Yahoo! Noise" <a href="https://twitter.com/yahoonoise">Brad Evans</a>. 
-      
-        First, I will start off by answering some imagined questions.
+        For this project, I aim to statistically analyze fantasy football prognosticator, "Yahoo! Noise" <a href="https://twitter.com/yahoonoise">Brad Evans</a>. 
       </section>
         
       <section>
@@ -40,17 +44,19 @@
 
         <img src="images/brad-evans.jpg"><br />
         <p><i>...and why are you harassing him?</i></p>
-        <p>Brad Evans is a colorful and entertaining fantasy football guru at Yahoo! Fantasy Sports. He writes several columns on 
-        <a href="http://sports.yahoo.com/blogs/fantasy-roto-arcade/">Fantasy Roto Arcade</a>, including one of interest, the <b>Flames/Lames</b> column, where he picks the most overrated and 
-        underrated fantasy players respectively and justifies why he thinks they will blow your mind/fail you miserably.</p>
+        <p>Brad Evans is a colorful and entertaining fantasy football guru at Yahoo! Fantasy Sports. He writes several columns on
+        <a href="http://sports.yahoo.com/blogs/fantasy-roto-arcade/">Fantasy Roto Arcade</a>, 
+        including one of interest, the <b>Flames/Lames</b> column, where he picks the most underrated and overrated fantasy players 
+        respectively and justifies why he thinks they will blow your mind/fail you miserably.
 
-        <p>There are a few reasons why I am singling out Brad rather than doing a side-by-side comparison of all gurus (something I would love to do, btw).<p>
-        <p>First of all, this started out as a single question: "I wonder how often Brad actually gets it right?" 
-        I wondered this because I had followed Brad's picks before, thinking I had an ace up my sleeve. 
-        Those picks cost me $40 and my pride. But since then, I have dabbled in sports betting and the stock market as well, 
-        other common places you'll find "picker" services. Some of these are free, some are subscription based. After enough pain with losing money, I began to see the light. 
-        To win in arenas like this, you have to be right more than half of the
-        time. And generally, these services do not come close to winning more often than they lose.</p>
+        <p>There are a few reasons why I am singling out Brad rather than doing a side-by-side comparison of all gurus (something I would still love to do).<p>
+
+        <p>This started out as a single question: "How often does Brad actually get it right?" I wondered this because I had followed Brad's picks before, 
+           thinking I had an ace up my sleeve. Those picks cost me $40 and my pride. There are many gurus who will give you "either/or" suggestions, rankings, 
+           and post watchlists of various types. But Brad publishes his picks in the vain of a stock picker service; something for lazy types who just want 
+           plug-n-play answers. These types of services rarely pan out, and in my 2012 fantasy season, I followed Brad's picks a little too closely and finished 
+           near the bottom. 
+        </p>
         <p>So I began to wonder how good Brad actually is.</p>
         <p>The second thing that sparked the need to analyze was Brad's <b>Flames/Lames</b> column which is in a fairly consistent format week to week, and seemed an obvious 
         candidate for data wrangling.</p>
@@ -58,14 +64,25 @@
       </section>
 
       <section>
+        <h4>Caveats and Apologies to Brad</h4>
+          <p>To be fair up front, what Brad does is very difficult. Predicting the future using only intuition and past and present knowledge of the game is an 
+             uphill battle given the randomness inherent in football. This is not an affront on Brad Evans the person, but rather on Brad Evans the Flames/Lames 
+             column writer. When someone makes their work public, that work is subject to scrutiny. This work is no different and I am very open to your criticism!
+          </p>
+          <p>A further caveat is the missing data I discuss below. While I don't think a few more blog posts or slightly more accurate NFL data would alter the results 
+             that much, the missing data aspect must be disclosed.
+          </p>
+      </section>
+
+      <section>
         <h4>Gathering Data</h4>
 
         <p>Wrangling the data was a lot more painful than I thought it would be. I started this project on October 12th, 2015, at which point Week 4 of the 2015 season had finished up. I set my stake
         in the ground there, and did my best to go back to the beginning of time, or at least the beginning of the Flames/Lames column and collect everything Brad ever wrote about some improbable
-        outcome. My biggest hurdle was Yahoo!'s terrible website. There's no way to go back to specific dates or articles or anything. They implemented infinite scrolling (which is not infinite,
-        btw), which prevents me from going back too far.<p>
+        outcome. My biggest hurdle was Yahoo!'s terrible website. There's no way to go back to specific dates or article. They implemented infinite scrolling (not really infinite, btw), which
+        prevents me from going back as far as I need.</p>
 
-        <p>At that point, I began Googling (yes, Googling Yahoo! pages. I love the irony). I also searched Brad's Twitter account, because he usually shares the link there when he has a new article
+        <p>At that point, I began Googling the Yahoo! blog articles (I love the irony in that). I also searched Brad's Twitter account, because he usually shares the link there when he has a new article
         out. Finally, the <a href="http://archive.org">Internet Archive</a> had a few pages in its database as well. I was fairly successful with these methods, but there a number of gaps in my analysis. Those gaps include:</p>
         <ul>
           <li>
@@ -100,13 +117,16 @@
         because that is when I began the project. Wrangling the data would have taken a lot of effort to automate, so keeping these up to date week to week seems like overkill for a simple analysis
         project.</p>
         <p>Once I had the Flames/Lames articles, I saved them all to my local drive. Then I skimmed them down to just a text representation into two files for each year/week, 
-        one called "flames.txt" and one called "lames.txt". I corrected for inconsistencies and got everything into a parsable format. Thankfully, Brad was fairly consistent from year to year. 
-        It was Yahoo!'s website that suffered from inconsistencies.</p>
+           one called "flames.txt" and one called "lames.txt". I corrected for inconsistencies and got everything into a parsable format. Thankfully, Brad was fairly consistent from year to year. 
+           I made minor corrections to each Flames/Lames post to aid in parsing.
+        </p>
 
         <p>From week to week, Brad grades himself, but I noticed he has kind of a weird grading scale, and his grades are a screenshot of an Excel sheet, which doesn't help me much.
-        So to be more accurate, I decided I needed actual NFL data. That doesn't come easy or cheap, so I had to get it myself. I devised a scraping method for NFL.com and created a SQLite
-        database. You can download my <a href="https://github.com/bdetweiler/nfl-database">NFL Database here</a>. It only contains offensive player stats, and it's missing a lot of information.
-        I should have used ESPN.com as a basis, because their data is actually more complete than the NFL's own website, but I only realized this after I had finished that project.</p>
+           So to be more accurate, I decided I needed actual NFL data. That doesn't come easy or cheap, so I had to get it myself. I devised a scraping method for NFL.com and created a SQLite
+           database. You can download my <a href="https://github.com/bdetweiler/nfl-database">NFL Database here</a>. It only contains offensive player stats, and it's missing a lot of information.
+           If I were starting from scratch, this is probably the biggest adjustment I would have made.
+        </p>
+
       </section>
       <section>
         <h4>Analysis</h4>
@@ -120,8 +140,10 @@
         <p>
           Another thing I wondered was whether Brad targeted certain individuals in both categories (Flames and Lames). 
           <img src="images/flames-lames-joint-appearances.png"><br />
-          It's a little cluttered, but we can see that Ryan Matthews is the most evenly distributed, with 5 Flames and 6 Lames appearances. But Chris Johnson has made 12 appearances in the Lames
-          column, and just one in Flames. This is probably deserved. CJ2K, or CJ2Lame as Brad used to quip, ruined a lot of people's fantasy hopes year after year (I am in that group). 
+          It's a little cluttered, but we can see that Ryan Matthews is the most evenly distributed, with 5 Flames and 6 Lames 
+          appearances. Brad has talked about Matthews as his man-crush often, but it's nice to see he doesn't let him off the hook. 
+          Chris Johnson has made 12 appearances in the Lames column, and just one in Flames. This is probably deserved. 
+          CJ2K, or "CJ2Lame" as Brad used to quip, ruined a lot of people's fantasy hopes year after year (I am in that group).
         </p>
         <p>
           Looking at the spread of the data, the Flames look to be hovering closer to Lame territory than I would like. The red dot is the mean, and the red line is the median. <br />
