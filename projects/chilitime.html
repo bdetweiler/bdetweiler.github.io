@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Brian Detweiler</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div id="header-title">
+          <!-- TODO: Need to make this clickable (home) but font still be black  -->
+          <!-- TODO: I would like a kind of gradiant black hole on the page maybe. -->
+          <h1>Into the Darkness</h1>
+        </div>
+
+        <p><i>When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again.</i></p>
+        <p style="text-align: right">Carl Friedrich Gauss</p>
+
+        <p class="view"><a href="projects.html">Projects</a></p>
+        <p class="view"><a href="../blog.html">Blog</a></p>
+        <p class="view"><a href="http://github.com/bdetweiler">/src <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://twitter.com/detweiler">@detweiler <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://about.me/briandetweiler">About Brian Detweiler <img src="images/external-link-icon.png" /></a></p>
+
+      </header>
+      <section>
+        <h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+          Chili Time
+        </h3>
+        <h4>
+          Adds an event to my calendar when there's chili at Union Pacific's cafeteria
+        </h4>
+      </section>
+
+      <section>
+        <h3>
+          Introduction
+        </h3>
+
+        <p>
+          One day, I was sitting at my desk eating a bowl of chili from Union Pacific's cafeteria, run by Gukenheimer.
+          I thought about how I never knew when they would have it, and I would see it by dumb luck and get excited,
+          since chili is probably one of my favorite foods.
+        <p>
+        </p>
+          Gukenheimer has a website, and they publush a weekly menu. But I forget to look, and honestly, it just seems
+          like too much work to have to pull up a food menu every day. I thought this was a great candidate for automation.
+        </p>
+      </section>
+
+      <section>
+        <h3>
+          The Idea
+        </h3>
+
+        <p>
+          Web scraping is kind of a thing of mine. I've made a good portion of my career out of it, with the credo, "If I can HTTP it, I can do anything with it."
+          So that was the plan here. Their menu is published weekly as a Lotus Notes formatted document here: 
+          <a href="dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf">dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf</a>.
+          Furthermore, it is frames-based, but each day has its own URL.
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Implementation
+        </h3>
+        <p>
+          Using Python, it was easy enough to get "today" then count back to Monday. From there, we can grab all days, Mon-Fri. 
+          Ater that, my logic is incredibly basic. I just look for the word "Chili" but rejecting the words "Chili Mac", "Chili Sauce", and "Chicken Chili", (because their Chicken Chili is in this weird
+          white sauce, and can't really be counted as a chili). From there, I write out an iCal file to this website, and do a git commit/push.
+        </p>
+
+        <p>
+          Then I just had to add the iCal file in Google Calendar, and schedule the whole process as a cron job to run every Monday at 8 AM. 
+        </p>
+
+        <p>
+          Probably the most difficult thing about all this was figuring out how to store git credentials so I could automate this. I found <a
+          href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github">this StackOverflow article</a> to be very helpful. 
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Results
+        </h3>
+        <p>
+          Assuming I set up my crontab right, I think it's going to work. This week already put an entry on my calendar for Friday. I'll have to keep my eye out for bugs though.
+          And there's the 2 Soups issue: The website only lists two of the three soups they are serving for that day. So, at this point, it's only a 66.6% solution. That's as good
+          as it's going to get. I'm ok with those odds.
+        </p>
+
+      </section>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
