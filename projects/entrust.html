@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Brian Detweiler</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73946910-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div id="header-title">
+          <!-- TODO: Need to make this clickable (home) but font still be black  -->
+          <!-- TODO: I would like a kind of gradiant black hole on the page maybe. -->
+          <h1>Into the Darkness</h1>
+        </div>
+
+        <p><i>When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again.</i></p>
+        <p style="text-align: right">Carl Friedrich Gauss</p>
+
+        <p class="view"><a href="projects.html">Projects</a></p>
+        <p class="view"><a href="../blog.html">Blog</a></p>
+        <p class="view"><a href="http://github.com/bdetweiler">/src <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://twitter.com/detweiler">@detweiler <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://about.me/briandetweiler">About Brian Detweiler <img src="images/external-link-icon.png" /></a></p>
+
+      </header>
+      <section>
+        <h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+          Entrust Grid Card Automation
+        </h3>
+        <h4>
+          Uses AutoHotKey to automate Entrust two-factor grid card challenges. 
+        </h4>
+      </section>
+
+      <section>
+        <h3>
+          Introduction
+        </h3>
+
+        <p>
+          Security nerds and developers have a long history of being at odds with one another. Coming from an early security background, I have an empathy
+          for both sides, but too often, I think the security nerds use it as an excuse to make software hard to use. Google got it right, by sending you a text 
+          message with a four-digit code. Still not the fastest user experience, but it's an acceptable compromise. It enhances security while not stopping
+          me dead in my tracks for anywhere from 30 seconds to a minute. Not to mention, you can have the site remember you from a particular PC so you don't 
+          have to go through the process on your home PC every time you want to login.
+        <p>
+        </p>
+          The Entrust method goes about this all wrong. 
+        </p>
+      </section>
+
+      <section>
+        <h3>
+          The Idea
+        </h3>
+
+        <p>
+          Web scraping is kind of a thing of mine. I've made a good portion of my career out of it, with the credo, "If I can HTTP it, I can do anything with it."
+          So that was the plan here. Their menu is published weekly as a Lotus Notes formatted document here: 
+          <a href="http://dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf">http://dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf</a>.
+          Furthermore, it is frames-based, but each day has its own URL.
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Implementation
+        </h3>
+        <p>
+          Using Python, it was easy enough to get "today" then count back to Monday. From there, we can grab all days, Mon-Fri. 
+          Ater that, my logic is incredibly basic. I just look for the word "Chili" but rejecting the words "Chili Mac", "Chili Sauce", and "Chicken Chili", (because their Chicken Chili is in this weird
+          white sauce, and can't really be counted as a chili). From there, I write out an iCal file to this website, and do a git commit/push.
+        </p>
+
+        <p>
+          Then I just had to add the iCal file in Google Calendar, and schedule the whole process as a cron job to run every Monday at 8 AM. 
+        </p>
+
+        <p>
+          Probably the most difficult thing about all this was figuring out how to store git credentials so I could automate this. I found <a
+          href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github">this StackOverflow article</a> to be very helpful. 
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Results
+        </h3>
+        <p>
+          Assuming I set up my crontab right, I think it's going to work. This week already put an entry on my calendar for Friday. I'll have to keep my eye out for bugs though.
+          And there's the 2 Soups issue: The website only lists two of the three soups they are serving for that day. So, at this point, it's only a 66.6% solution. That's as good
+          as it's going to get. I'm ok with those odds.
+        </p>
+
+      </section>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
