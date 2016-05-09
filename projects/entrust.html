@@ -50,20 +50,31 @@
         </h4>
       </section>
 
+
       <section>
+        <p>
+          <i>
+            In this project, I reference Entrust, within the context of <a href="http://secure.unmc.edu">The University of Nebraska Medical Center</a> specifically. 
+            I assume the Entrust grid card model is implented similarly elsewhere, but I am addressing this specific implementation.
+          </i>
+        <p>
+
         <h3>
           Introduction
         </h3>
 
         <p>
           Security nerds and developers have a long history of being at odds with one another. Coming from an early security background, I have an empathy
-          for both sides, but too often, I think the security nerds use it as an excuse to make software hard to use. Google got it right, by sending you a text 
-          message with a four-digit code. Still not the fastest user experience, but it's an acceptable compromise. It enhances security while not stopping
+          for both sides, but too often, I think the security nerds use it as an excuse to make software hard to use. Google got two-factor authentication right, 
+           by sending you a text message with a four-digit code. Still not the fastest user experience, but it's an acceptable compromise. It enhances security while not stopping
           me dead in my tracks for anywhere from 30 seconds to a minute. Not to mention, you can have the site remember you from a particular PC so you don't 
           have to go through the process on your home PC every time you want to login.
         <p>
         </p>
-          The Entrust method goes about this all wrong. 
+          The Entrust method goes about this all wrong. They provide you with a randomized but hard-coded grid card that they tell you to "take a picture of" so you 
+          don't lose it. Yeah. They literally tell you to take a picture of your computer screen with your phone. So many red flags. And instead of allowing you to
+          add a trusted PC, you have to reauthenticate every time you login, which also cannot be stored. This leads to one of two scenarios: Frustration, or finding a hack
+          that basically circumvents it. We'll take the latter. 
         </p>
       </section>
 
@@ -73,10 +84,17 @@
         </h3>
 
         <p>
-          Web scraping is kind of a thing of mine. I've made a good portion of my career out of it, with the credo, "If I can HTTP it, I can do anything with it."
-          So that was the plan here. Their menu is published weekly as a Lotus Notes formatted document here: 
-          <a href="http://dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf">http://dining.guckenheimer.com/clients/unionpacific/fss/fss.nsf</a>.
-          Furthermore, it is frames-based, but each day has its own URL.
+          My girlfriend is a CRNA student and does clinical rotations at the University of Nebraska Medical Center (UNMC). They require VPN and remote desktop
+          to pre-lab their patients the night before, but this process was a major pain, and tech support was nearly non-existent. At first, I made several attempts
+          to get her connected from her Linux laptop (yes, it was a hand-me-down from me, but it has grown on her). After a frustrating weekend, I broke down and bought
+          a Windows PC to get the Pulse Secure software to work. We were able to get connected, but the entire process was taking around 20 minutes, and sometimes, it
+          wouldn't work. So 20 minutes turned into 40, turned into an hour. Unacceptable. My solution: AutoHotKey, and a Grid Card mapping.
+        </p>
+
+        <p>
+          The good news is, the grid card is hard-coded. All we need to do is grab the input (the challenge) and feed it into the mapping
+          to get the answer. On the website, this could be accomplished in a Greasemonkey script, but the same challenge is also presented in the Junos Pulse Secure client, which is 
+          used for remote desktop. This is an out-of-browser context, which is why we need AutoHotKey to grab the challenge in the Pulse Secure client.
         </p>
 
       </section>
@@ -85,19 +103,14 @@
         <h3>
           The Implementation
         </h3>
+
         <p>
-          Using Python, it was easy enough to get "today" then count back to Monday. From there, we can grab all days, Mon-Fri. 
-          Ater that, my logic is incredibly basic. I just look for the word "Chili" but rejecting the words "Chili Mac", "Chili Sauce", and "Chicken Chili", (because their Chicken Chili is in this weird
-          white sauce, and can't really be counted as a chili). From there, I write out an iCal file to this website, and do a git commit/push.
+          A partial implementation can be found on my GitHub, here: <a
+          href="https://github.com/bdetweiler/entrust-grid-challenge-automation/blob/master/UNMCGrid.ahk">https://github.com/bdetweiler/entrust-grid-challenge-automation/blob/master/UNMCGrid.ahk</a>
         </p>
 
         <p>
-          Then I just had to add the iCal file in Google Calendar, and schedule the whole process as a cron job to run every Monday at 8 AM. 
-        </p>
-
-        <p>
-          Probably the most difficult thing about all this was figuring out how to store git credentials so I could automate this. I found <a
-          href="http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github">this StackOverflow article</a> to be very helpful. 
+          I've left most of the steps out, because it requires a lot of personal information, like logins, passwords, etc. But this piece will get you through the front door.
         </p>
 
       </section>
@@ -107,9 +120,8 @@
           The Results
         </h3>
         <p>
-          Assuming I set up my crontab right, I think it's going to work. This week already put an entry on my calendar for Friday. I'll have to keep my eye out for bugs though.
-          And there's the 2 Soups issue: The website only lists two of the three soups they are serving for that day. So, at this point, it's only a 66.6% solution. That's as good
-          as it's going to get. I'm ok with those odds.
+          This seems to be working perfectly. A single hotkey runs through all the manual steps, including the grid card challenge, and takes you to the point of login.
+          20-plus minutes has been reduced to a key-combo. Thanks, AHK!
         </p>
 
       </section>
