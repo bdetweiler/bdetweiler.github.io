@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dumb Facebook Posts That Make You Think"
-date:   2016-05-15 20:45:00
+date:   2016-05-15 22:11:00
 categories: mathematics
 ---
 
