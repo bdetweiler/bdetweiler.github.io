@@ -13,7 +13,7 @@ However, a few weeks ago when I checked in, I had been summoned to weigh in on a
 stimulus. But rather than wanting to prove a bunch of people wrong, or show everyone how quickly I can solve riddles, I was interested in thinking about this problem
 critically. 
 
-![The dumb post in question](https://github.com/bdetweiler/bdetweiler.github.io/blob/master/images/facebook_post.jpg "The dumb post in question")
+![The dumb post in question](https://raw.githubusercontent.com/bdetweiler/bdetweiler.github.io/master/images/facebook_post.jpg "The dumb post in question")
 
 The subject in question, was posted by [Randal Jones Latin Juggalo](https://www.facebook.com/randall.joneslatinjuggalo/posts/1048238075247858) with the caption, 
 "Can you figure this out...only one in a thousand will get it". Just like magnets (how do they work?!)
@@ -72,15 +72,15 @@ one another, and this is clearly not the case.
 In fact, there is a solution that produces the same result that does not rely on any sort of pattern. It is simply a * (b + 1) = c, and this holds for the entire dumb meme. This is illustrated
 elegantly by plotting the points:
 
-![The supposedly correct answer](https://github.com/bdetweiler/bdetweiler.github.io/blob/master/images/facebook_post_answer_right.jpg "The supposed correct answer")
+![The supposedly correct answer](https://raw.githubusercontent.com/bdetweiler/bdetweiler.github.io/master/images/facebook_post_answer_right.jpg "The supposed correct answer")
 
 However, using the pattern logic and not assuming that 7 is correct, we end up with a much less likely fit:
 
-![The definitely not correct](https://github.com/bdetweiler/bdetweiler.github.io/blob/master/images/facebook_post_answer_wrong.jpg "The definitely not correct answer")
+![The definitely not correct](https://raw.githubusercontent.com/bdetweiler/bdetweiler.github.io/master/images/facebook_post_answer_wrong.jpg "The definitely not correct answer")
 
 I am hesitant to say that 96 is hands down the correct answer, simply because I have not been asked a formal question with complete information. I am forced to extrapolate this meme into a question
 with some information that I have to make further assumptions on. If I wanted to play it really safe, I would say the answer is 60.66666667. How did I get that? Linear regression, with y = 8x -
 3.333, which has an R^2 of 0.999. Hey, given the information we're given, I'd say that's a pretty satisfactory answer.
 
-![The plausible answer? Sure, why not.](https://github.com/bdetweiler/bdetweiler.github.io/blob/master/images/facebook_post_answer_mine.jpg "A plausible answer? Sure, why not.")
+![The plausible answer? Sure, why not.](https://raw.githubusercontent.com/bdetweiler/bdetweiler.github.io/master/images/facebook_post_answer_mine.jpg "A plausible answer? Sure, why not.")
 
