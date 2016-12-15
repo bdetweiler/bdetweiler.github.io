@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Brian Detweiler</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73946910-1', 'auto');
+      ga('send', 'pageview');
+  </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div id="header-title">
+          <!-- TODO: Need to make this clickable (home) but font still be black  -->
+          <!-- TODO: I would like a kind of gradiant black hole on the page maybe. -->
+          <h1>Into the Darkness</h1>
+        </div>
+
+        <p><i>When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again.</i></p>
+        <p style="text-align: right">Carl Friedrich Gauss</p>
+
+        <p class="view"><a href="projects.html">Projects</a></p>
+        <p class="view"><a href="../blog.html">Blog</a></p>
+        <p class="view"><a href="http://github.com/bdetweiler">/src <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://twitter.com/detweiler">@detweiler <img src="images/external-link-icon.png" /></a></p>
+        <p class="view"><a href="http://about.me/briandetweiler">About Brian Detweiler <img src="images/external-link-icon.png" /></a></p>
+
+      </header>
+      <section>
+        <h3>
+          <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+          Entrust Grid Card Automation
+        </h3>
+        <h4>
+          Uses AutoHotKey to automate Entrust two-factor grid card challenges. 
+        </h4>
+      </section>
+
+
+      <section>
+        <p>
+          <i>
+            In this project, I reference Entrust, within the context of a medical university. 
+            I assume the Entrust grid card model is implented similarly elsewhere, but I am addressing this specific implementation.
+          </i>
+        <p>
+
+        <h3>
+          Introduction
+        </h3>
+
+        <p>
+          Security nerds and developers have a long history of being at odds with one another. Coming from an early security background, I have an empathy
+          for both sides, but too often, I think the security nerds use it as an excuse to make software hard to use. Google got two-factor authentication right, 
+           by sending you a text message with a four-digit code. Still not the fastest user experience, but it's an acceptable compromise. It enhances security while not stopping
+          me dead in my tracks for anywhere from 30 seconds to a minute. Not to mention, you can have the site remember you from a particular PC so you don't 
+          have to go through the process on your home PC every time you want to login.
+        <p>
+        </p>
+          The Entrust method goes about this all wrong. They provide you with a randomized but hard-coded grid card that they tell you to "take a picture of" so you 
+          don't lose it. Yeah. They literally tell you to take a picture of your computer screen with your phone. So many red flags. And instead of allowing you to
+          add a trusted PC, you have to reauthenticate every time you login, which also cannot be stored. This leads to one of two scenarios: Frustration, or finding a hack
+          that basically circumvents it. We'll take the latter. 
+        </p>
+      </section>
+
+      <section>
+        <h3>
+          The Idea
+        </h3>
+
+        <p>
+          My girlfriend is a CRNA student. The university where she is doing her clinical rotations require VPN and remote desktop
+          to pre-lab their patients the night before, but this process was a major pain, and tech support was nearly non-existent. At first, I made several attempts
+          to get her connected from her Linux laptop (yes, it was a hand-me-down from me, but it has grown on her). After a frustrating weekend, I broke down and bought
+          a Windows PC to get the Pulse Secure software to work. We were able to get connected, but the entire process was taking around 20 minutes, and sometimes, it
+          wouldn't work. So 20 minutes turned into 40, turned into an hour. Unacceptable. My solution: AutoHotKey, and a Grid Card mapping.
+        </p>
+
+        <p>
+          The good news is, the grid card is hard-coded. All we need to do is grab the input (the challenge) and feed it into the mapping
+          to get the answer. On the website, this could be accomplished in a Greasemonkey script, but the same challenge is also presented in the Junos Pulse Secure client, which is 
+          used for remote desktop. This is an out-of-browser context, which is why we need AutoHotKey to grab the challenge in the Pulse Secure client.
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Implementation
+        </h3>
+
+        <p>
+          A partial implementation can be found on my GitHub, here: <a
+          href="https://github.com/bdetweiler/entrust-grid-challenge-automation/blob/master/UNMCGrid.ahk">https://github.com/bdetweiler/entrust-grid-challenge-automation/blob/master/UNMCGrid.ahk</a>
+        </p>
+
+        <p>
+          I've left most of the steps out, because it requires a lot of personal information, like logins, passwords, etc. But this piece will get you through the front door.
+        </p>
+
+      </section>
+
+      <section>
+        <h3>
+          The Results
+        </h3>
+        <p>
+          This seems to be working perfectly. A single hotkey runs through all the manual steps, including the grid card challenge, and takes you to the point of login.
+          20-plus minutes has been reduced to a key-combo. Thanks, AHK!
+        </p>
+
+      </section>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

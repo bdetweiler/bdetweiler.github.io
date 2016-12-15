@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Intro"
+title:  "Test Blog Post"
 date:   2015-12-27 12:38:38
 categories: musings
 ---
-Intro to me.
-
+Test blog post. Figuring out Jekyll.
