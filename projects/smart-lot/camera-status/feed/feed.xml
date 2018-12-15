@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+
+    <channel>
+	    <title>Smart Lot Camera Status</title>
+	    <atom:link href="https://bdetweiler.github.io/projects/smart-lot/camera-status/feed/feed.xml" rel="self" type="application/rss+xml" />
+	    <link>https://bdetweiler.github.io</link>
+	    <description>Smart Lot Camera Status</description>
+	    <lastBuildDate>Fri, 14 Dec 2018 02:24:37 +0000</lastBuildDate> <!-- BRD0 -->
+	    <language>en-US</language>
+	    <sy:updatePeriod>hourly</sy:updatePeriod>
+	    <sy:updateFrequency>4</sy:updateFrequency>
+	    
+	    <item> <!-- BRD1 -->
+		    <title>Camera Status</title> <!-- BRD2 -->
+		    <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link> <!-- BRD3 -->
+		    <pubDate>Fri, 14 Dec 2018 02:38:41 +0000</pubDate> <!-- BRD4 -->
+		    <dc:creator><![CDATA[Brian Detweiler]]></dc:creator> <!-- BRD5 -->
+				    <category><![CDATA[Status]]></category> <!-- BRD6 -->
+		    <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid> <!-- BRD7 -->
+		    <description><![CDATA[ON]]></description> <!-- BRD8 -->
+        </item> <!-- BRD9 -->
+    </channel>
+</rss>
