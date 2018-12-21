@@ -1,23 +1,208 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/rss/1.0/modules/syndication/" version="2.0">
+<?xml version="1.0" ?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/rss/1.0/modules/syndication/">
+  
 
-    <channel>
-	    <title>Smart Lot Camera Status</title>
-	    <item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 16:26:23 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 15:45:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 15:15:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 14:45:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 14:15:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 13:45:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 13:15:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 12:45:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><ns0:link href="https://bdetweiler.github.io/projects/smart-lot/camera-status/feed/feed.xml" rel="self" type="application/rss+xml" />
-	    <link>https://bdetweiler.github.io</link>
-	    <description>Smart Lot Camera Status</description>
-	    <lastBuildDate>Fri, 14 Dec 2018 02:24:37 +0000</lastBuildDate> 
-	    <language>en-US</language>
-	    <ns1:updatePeriod>hourly</ns1:updatePeriod>
-	    <ns1:updateFrequency>4</ns1:updateFrequency>
+    
+  <channel>
+    
+	    
+    <title>Smart Lot Camera Status</title>
+    
+	    
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 16:57:38 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 16:26:23 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 15:45:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 15:15:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 14:45:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 14:15:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 13:45:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 13:15:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 12:45:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <ns0:link href="https://bdetweiler.github.io/projects/smart-lot/camera-status/feed/feed.xml" rel="self" type="application/rss+xml"/>
+    
+	    
+    <link>https://bdetweiler.github.io</link>
+    
+	    
+    <description>Smart Lot Camera Status</description>
+    
+	    
+    <lastBuildDate>Fri, 14 Dec 2018 02:24:37 +0000</lastBuildDate>
+     
+	    
+    <language>en-US</language>
+    
+	    
+    <ns1:updatePeriod>hourly</ns1:updatePeriod>
+    
+	    
+    <ns1:updateFrequency>4</ns1:updateFrequency>
+    
 
-	    <item> 
-		    <title>Camera Status</title> 
-		    <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link> 
-		    <pubDate>Fri, 14 Dec 2018 02:38:41 +0000</pubDate> 
-		    <dc:creator>Brian Detweiler</dc:creator> 
-				    <category>Status</category> 
-		    <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid> 
-		    <description>ON</description> 
-        </item> 
-    <item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 12:45:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 13:15:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 13:45:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 14:15:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 14:45:05 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 15:15:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 15:45:06 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item><item><title>Camera Status</title><link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link><pubdate>Fri, 12 Dec 2018 16:26:23 -0600</pubdate><category>&lt;![CDATA[Status]]&gt;</category><guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid><category>&lt;![CDATA[OFF]]</category></item></channel>
+	    
+    <item>
+       
+		    
+      <title>Camera Status</title>
+       
+		    
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+       
+		    
+      <pubDate>Fri, 14 Dec 2018 02:38:41 +0000</pubDate>
+       
+		    
+      <dc:creator>Brian Detweiler</dc:creator>
+       
+				    
+      <category>Status</category>
+       
+		    
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+       
+		    
+      <description>ON</description>
+       
+        
+    </item>
+     
+    
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 12:45:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 13:15:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 13:45:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 14:15:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 14:45:05 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 15:15:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 15:45:06 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 16:26:23 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+    <item>
+      <title>Camera Status</title>
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      <pubdate>Fri, 12 Dec 2018 16:57:38 -0600</pubdate>
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      <category>&lt;![CDATA[OFF]]</category>
+    </item>
+  </channel>
+  
+
 </rss>
