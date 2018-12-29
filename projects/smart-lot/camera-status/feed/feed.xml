@@ -3,31 +3,37 @@
   
   
   
+  
 
     
+  
   
   
   <channel>
     
     
     
+    
 	    
+    
     
     
     <title>Smart Lot Camera Status</title>
     
     
     
+    
 	    
     
     
+    
     <item>
       <title>Camera Status</title>
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
-      <pubdate>Fri, 12 Dec 2018 17:08:38 -0600</pubdate>
-      <category>&lt;![CDATA[Status]]&gt;</category>
+      <pubdate>Fri, 12 Dec 2018 20:30:11 -0600</pubdate>
+      <category>Status</category>
       <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
-      <description>ON</description>
+      <description>OFF</description>
     </item>
     <item>
       
@@ -36,24 +42,66 @@
       
       
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
+      <pubdate>Fri, 12 Dec 2018 17:08:38 -0600</pubdate>
+      
+      
+      <category>&lt;![CDATA[Status]]&gt;</category>
+      
+      
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      
+      
+      <description>ON</description>
+      
+    
+    </item>
+    
+    
+    <item>
+      
+      
+      
+      
+      <title>Camera Status</title>
+      
+      
+      
+      
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       <pubdate>Fri, 12 Dec 2018 17:01:47 -0600</pubdate>
       
       
+      
+      
       <category>Status</category>
       
       
+      
+      
       <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      
+      
       
       
       <description>ON</description>
       
+      
+    
     
     </item>
     
     
+    
+    
     <item>
+      
+      
       
       
       
@@ -63,7 +111,11 @@
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -73,7 +125,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -83,12 +139,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -98,12 +160,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -113,7 +181,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -123,12 +195,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -138,12 +216,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -153,7 +237,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -163,12 +251,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -178,12 +272,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -193,7 +293,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -203,12 +307,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -218,12 +328,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -233,7 +349,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -243,12 +363,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -258,12 +384,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -273,7 +405,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -283,12 +419,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -298,12 +440,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -313,7 +461,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -323,12 +475,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -338,12 +496,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -353,7 +517,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -363,12 +531,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -378,12 +552,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -393,7 +573,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -403,12 +587,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -418,12 +608,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -433,7 +629,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -443,12 +643,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -458,12 +664,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -473,7 +685,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -483,12 +699,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -498,12 +720,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -513,7 +741,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -523,12 +755,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -538,12 +776,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -553,7 +797,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -563,12 +811,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -578,12 +832,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -593,7 +853,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -603,12 +867,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -618,12 +888,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -633,7 +909,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -643,12 +923,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -658,12 +944,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -673,7 +965,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -683,12 +979,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -698,12 +1000,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -713,7 +1021,11 @@
       
       
       
+      
+      
       <category>Status</category>
+      
+      
       
       
       
@@ -723,12 +1035,18 @@
       
       
       
+      
+      
       <description>OFF</description>
       
       
+      
+    
     
     
     </item>
+    
+    
     
     
     
@@ -738,12 +1056,18 @@
       
       
       
+      
+      
       <title>Camera Status</title>
       
       
       
       
+      
+      
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
       
       
       
@@ -753,6 +1077,56 @@
       
       
       
+      
+      
+      <category>Status</category>
+      
+      
+      
+      
+      
+      
+      <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
+      
+      
+      
+      
+      
+      
+      <description>OFF</description>
+      
+      
+      
+    
+    
+    
+    </item>
+    
+    
+    
+  
+    
+    
+    <item>
+      
+      
+      
+      
+      <title>Camera Status</title>
+      
+      
+      
+      
+      <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
+      
+      
+      
+      
+      <pubdate>Fri, 12 Dec 2018 17:01:47 -0600</pubdate>
+      
+      
+      
+      
       <category>Status</category>
       
       
@@ -763,7 +1137,7 @@
       
       
       
-      <description>OFF</description>
+      <description>ON</description>
       
       
     
@@ -782,10 +1156,10 @@
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
       
       
-      <pubdate>Fri, 12 Dec 2018 17:01:47 -0600</pubdate>
+      <pubdate>Fri, 12 Dec 2018 17:08:38 -0600</pubdate>
       
       
-      <category>Status</category>
+      <category>&lt;![CDATA[Status]]&gt;</category>
       
       
       <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
@@ -800,15 +1174,17 @@
     <item>
       <title>Camera Status</title>
       <link>https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</link>
-      <pubdate>Fri, 12 Dec 2018 17:08:38 -0600</pubdate>
-      <category>&lt;![CDATA[Status]]&gt;</category>
+      <pubdate>Fri, 12 Dec 2018 20:30:11 -0600</pubdate>
+      <category>Status</category>
       <guid isPermaLink="false">https://bdetweiler.github.io/projects/smart-lot/camera-status/status.html</guid>
-      <description>ON</description>
+      <description>OFF</description>
     </item>
   </channel>
   
   
   
+  
+
 
 
 
