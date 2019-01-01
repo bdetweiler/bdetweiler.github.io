@@ -1,0 +1,140 @@
+---
+title: "Places to Live"
+author: "Brian Detweiler"
+date: "January 1, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(XML)
+library(RCurl)
+library(rlist)
+library(knitr)
+knitr::opts_chunk$set(echo = TRUE)
+places.df <- read_csv('/home/bdetweiler/src/Data_Science/bdetweiler.github.io/projects/places/final.csv')
+places.df <- places.df %>% mutate(rank.by.pop=1:n())
+places.df <- places.df %>% mutate(city.state=paste0(city, ", ", state))
+```
+
+## Where, oh Where?
+
+For nearly half of my adult life, I have dreamed of leaving Omaha for greener pastures. The plan has always just been to finish my time with 
+the Army, get my degree, and peace out. Now, as we enter 2019, I am approaching the 10 year anniversary of my honorable discharge from
+the Army and receiving my Bachelor of Science in Computer Science and Mathematics. And I'm still here.
+
+The reasons are varied but not uncommon, but the predominant one has been money/debt. This year I have a very real chance to get out of debt, 
+so the question of where would I want to move if I could should probably be addressed. And of course, it's a simple question without a simple
+answer.
+
+Conventional wisdom says to go where the jobs are, and in tech, most of those are on the West Coast. However, that's also where the rent is 
+three to five times what I'm paying in Omaha. And then there's the considerations of public transportation, weather, and the dating and music scene.
+
+So rather than listen to the various voices telling me where I should and shouldn't move, I've decided to take a somewhat empirical approach. 
+Let's establish some metrics, gather the data, and compare all my options on an equal scale.
+
+## Metrics and Data Collection
+
+First, I needed to establish some metrics. What cities would I be comparing? I'm mostly interested in densely populated cities, not small towns.
+So I simply started with Wikipedia's [List of United States cities by population](https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population).
+This is a list of 311 cities containing at least 100,000 people according to the 2017 estimate of the 2010 Census. 
+
+> **Caveat:** When people speak of cities, they often imply they are also talking about the surrounding suburbs, even if they are technically their own city. An example would be Miami, which by population, is actually smaller than Omaha. But when people talk of Miami, they are usually implying the inclusion of neighboring Hialeah, Miami Gardens, Miami Beach, etc. In this analysis, we are dealing with the technical definition of the cities, as Wikipedia has listed them.
+
+### Top 25 Cities by 2017 Population
+```{r cities.by.population, echo=FALSE}
+places.df %>% 
+  select(rank.by.pop, city.state, pop2017) %>% 
+  filter(rank.by.pop < 26) %>%
+  kable(col.names = c('Rank', 'Location', 'Population 2017'))
+```
+
+
+### Metrics
+
+I then broke down the desirable traits of a city into categories and further into quantifiable data points.
+
+  - Climate
+    - Difference from 78 degrees by month
+    - Precipitation
+    - Air Quality
+  - Population
+    - Population density
+    - Population growth in last 10 years
+    - Median age
+    - % married
+    - % male
+    - Crime rate
+  - Livability
+    - Cost of living
+    - Walk score
+    - Transit score
+    - Bike score
+    - % favorite bands have played there recently
+
+The result is a score that I just now made up called the **CPL Score**. The CPL Score is a holistic look at a city given the metrics that are
+important to me. Someone else may have a different idea of what makes a city desirable. For instance, I am looking for a very low median age,
+high population density, a climate as close as possible to 78 degrees for much of the year, and a place that brings in a lot of heavy metal shows.
+
+## Collecting Data
+
+I started off gathering climate data from http://usclimatedata.com. This ended up being a bust and a huge waste of time and effort because
+not all of the cities were in their database. I ended up scraping most of my data from https://www.areavibes.com. They also provide their own
+Livability score, but I didn't use it because my criteria are a little different. 
+
+For mobility, I used https://www.walkscore.com. 
+
+Concerts were a little less scientific. I simply went to http://loudwire.com and looked at all the concerts I would have totally gone to in the
+last year had they came to Omaha. I supplemented with shows from smaller bands listed on https://www.bandsintown.com. I didn't need that big of a sample size here because it really was kind of a random sample. I ended up with 570 show listings. Good enough for my purposes. More than likely, I wasn't going to find a Behemoth show in Davenport, Iowa, no matter how much data I gathered.
+
+## Cleaning and Normalizing
+
+The collected data are not perfect. There were several cities that didn't match the AreaVibes URL and didn't get collected, so I had to 
+manually enter those. I also meant to collect the average temperature for each month, when I mistakenly got the average LOW temperature
+for each month. This would have been fine, but during manual entry, I accidentlly put in the average, so there's a bit of a mish-mash. 
+The manual entries are for very small cities that I most likely wouldn't have considered anyway.
+
+Once the data were loaded and all the NAs were gone (either filled in with actual data, or replaced with 0), I standardized and normalized the columns. 
+This allows me to compare each metric equally to the others. That is, with the exception of Cost of Living. This one is pretty important, so I multiplied
+the normalized value by 5. 
+
+Finally, the objective is to get the "golf score", or smallest score. So for features that I preferred to be larger, such as population density, 
+I took the negative. For temperature, I took the absolute value of the temperature minus 78 degrees (the closer to 78 the better). 
+
+The final CPL score was just a summation of each row. Smallest score wins. 
+
+### Top 25 Cities by CPL Score
+```{r cities.by.cpl, echo=FALSE}
+places.df %>% 
+  arrange(rank.by.score) %>%
+  select(rank.by.score,
+         results,
+         city.state,
+         pop2017,
+         area.sq.mi,
+         pop.density,
+         walk.score,
+         bike.score,
+         transit.score,
+         median.age,
+         mf.ratio,
+         married,
+         families,
+         cost.of.living,
+         crime,
+         concerts,
+         weather.averages,
+         precip.averages,
+         air.quality) %>%
+  filter(rank.by.score < 26) %>%
+  kable(col.names = c('Rank', 'CPL Score', 'Location', 'Population 2017', "Area mi^2", "Density", "Walk", "Bike", "Transit", "Age", "M/F", "Married", "Families", "Cost of Living", "Crime", "Concerts", "Weather (LOW)", "Precip.", "Air" ))
+```
+
+## Conclusion
+
+It's no surprise to see New York and Chicago around the top.
+This list is a good starting point but of course I'm not just going to blindly select the first one and move there.
+This approach simply allows me to narrow my search while also looking beyond the usual big 3 of New York/Chicago/LA. Some of these won't even make it past
+the initial phase. I mean, I know for a fact I'm not moving to Columbia, Missouri, even if it is a college town.
+
+You can find the code (**Warning**: Really sloppy R code) [here](https://github.com/bdetweiler/bdetweiler.github.io/tree/master/projects/places).

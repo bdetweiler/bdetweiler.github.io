@@ -1,0 +1,570 @@
+City, State
+Albany, NY
+Albuquerqe, NM
+Albuquerque, NM
+Albuquerque, NM
+Albuquerque, NM 
+Ames, IA
+Anaheim, CA
+Asbury Park, NJ
+Asheville, NC
+Asheville, NC
+Asheville, NC
+Athens, GA
+Athens, GA
+Atlanta, GA
+Atlanta, GA
+Atlanta, GA
+Atlanta, GA
+Atlanta, GA
+Atlanta, GA
+Austin, TX
+Austin, TX
+Austin, TX
+Austin, TX
+Austin, TX
+Baltimore, MD
+Baltimore, MD
+Baltimore, MD
+Baltimore, MD
+Baltimore, MD
+Baltimore, MD
+Baton Rouge, LA
+Bemidji, MN 
+Berkeley, CA
+Berkeley, CA
+Birmingham, AL
+Birmingham, AL
+Bloomington, IL
+Boise, ID
+Bonner Springs, KS
+Boston, MA
+Boston, MA
+Boston, MA
+Boulder, CO
+Brooklyn, NY
+Brooklyn, NY
+Brooklyn, NY
+Brooklyn, NY
+Buffalo, NY
+Burlington, VT
+Cadott, WI 
+Cambridge, MA
+Cambridge, MA
+Camden, NJ
+Charleston, WV
+Charlotte, NC
+Charlotte, NC
+Charlotte, NC
+Charlotte, NC
+Chicago, IL
+Chicago, IL
+Chicago, IL
+Chicago, IL
+Chicago, IL
+Chicago, IL
+Chicago, IL
+Clearwater, FL
+Cleveland, OH
+Cleveland, OH
+Cleveland, OH
+Cleveland, OH
+Cleveland, OH
+Cleveland, OH
+Clifton Park, NY
+Columbia, MO
+Columbia, MO
+Columbia, MO
+Columbia, SC
+Columbus, OH
+Columbus, OH
+Columbus, OH
+Columbus, OH
+Columbus, OH
+Corpus Christi, TX
+Corpus Christi, TX
+Corpus Christi, TX
+Dallas, TX
+Dallas, TX
+Dallas, TX
+Dallas, TX
+Dayton, OH
+Denver, CO
+Denver, CO
+Denver, CO
+Denver, CO
+Denver, CO
+Denver, CO
+Denver, CO
+Denver, CO
+Des Moines, IA
+Des Moines, IA
+Des Moines, IA
+Des Moines, IA
+Detroit, MI
+Detroit, MI
+Detroit, MI
+Easton, PA
+El Paso, TX
+Eugene, OR
+Ferndale, MI
+Flagstaff, AZ
+Flint, MI
+Flint, MI
+Flint, MI
+Fresno, CA
+Ft. Collins, CO
+Ft. Lauderdale, FL
+Ft. Lauderdale, FL
+Ft. Lauderdale, FL
+Ft. Lauderdale, FL
+Ft. Wayne, IN
+Ft. Wayne, IN
+Ft. Wayne, IN
+Ft. Wayne, IN
+Ft. Worth, TX
+Grand Rapids, MI
+Grand Rapids, MI
+Grand Rapids, MI
+Grand Rapids, MI
+Grand Rapids, MI
+Greensboro, NC
+Greensboro, NC
+Greenville, SC
+Hampton, NH
+Harrison, OH
+Hartford, CT
+Houston, TX
+Houston, TX
+Houston, TX
+Houston, TX
+Houston, TX
+Huntington, NY
+Indianapolis, IN
+Indianapolis, IN
+Iowa City, IA
+Iowa City, IA
+Irvine, CA
+Jacksonville, FL
+Jacksonville, FL
+Jacksonville, FL
+Jersey City, NJ
+Joliet, IL
+Joliet, IL
+Joliet, IL
+Joliet, IL
+Joliet, IL
+Kansas City, MO
+Kansas City, MO
+Kansas City, MO
+Kansas City, MO
+Lancaster, PA
+Lancaster, PA
+Lancaster, PA
+Lansing, MI
+Las Vegas, NV
+Las Vegas, NV 
+Lawrence, KS
+Lexington, KY
+Lincoln, NE
+Los Angeles, CA
+Los Angeles, CA
+Los Angeles, CA
+Los Angeles, CA
+Los Angeles, CA
+Los Angeles, CA
+Los Angeles, CA
+Louisville, KY
+Louisville, KY
+Louisville, KY
+Louisville, KY
+Louisville, KY
+Louisville, KY
+Lubbock, TX
+Lubbock, TX
+Madison, WI
+Madison, WI
+Madison, WI
+Madison, WI
+Madison, WI
+Madison, WI
+Memphis, TN
+Mesa, AZ
+Miami Beach, FL
+Midland, TX
+Millvale, PA
+Milwaukee, WI
+Minneapolis, MN
+Minneapolis, MN
+Minneapolis, MN
+Minot, ND
+Missoula, MT
+Mobile, AL
+Nashville, KY
+Nashville, TN
+Nashville, TN
+Nashville, TN
+New Haven, CT
+New Haven, CT
+New Orleans, LA
+New Orleans, LA
+New Orleans, LA
+New Orleans, LA
+New Orleans, LA
+New York, NY
+New York, NY
+New York, NY
+New York, NY
+Niagara Falls, NY
+Norfolk, VA
+Norfolk, VA
+Norfolk, VA
+Norfolk, VA
+Norfolk, VA
+North Charleston, SC
+North Myrtle Beach, SC
+Oakland, CA
+Odessa, TX
+Oklahoma City, OK
+Oklahoma City, OK
+Omaha, NE
+Omaha, NE
+Omaha, NE
+Orlando, FL
+Orlando, FL
+Oshkosh, WI
+Palatine, IL
+Pensacola, FL
+Pensacola, FL
+Pensacola, FL
+Peoria, IL
+Peoria, IL
+Philadelphia, PA
+Philadelphia, PA
+Philadelphia, PA
+Philadelphia, PA
+Phoenix, AZ
+Phoenix, AZ
+Phoenix, AZ
+Pittsburgh, PA
+Pittsburgh, PA
+Pittsburgh, PA
+Pomona, CA
+Pontiac, MI
+Portland, ME
+Portland, OR
+Portland, OR
+Portland, OR
+Portland, OR
+Portland, OR
+Portland, OR
+Portland, OR
+Poughkeepsie, NY
+Poughkeepsie, NY
+Poughkeepsie, NY
+Providence, RI
+Providence, RI
+Providence, RI
+Providence, RI
+Racine, WI
+Raleigh, NC
+Raleigh, NC
+Raleigh, NC
+Raleigh, NC
+Reading, PA
+Reading, PA
+Reading, PA
+Reno, NV
+Richmond, VA
+Richmond, VA
+Richmond, VA
+Richmond, VA
+Rochester, NY
+Rochester, NY
+Rochester, NY
+Sacramento, CA
+Sacramento, CA
+Sacramento, CA
+Sacramento, CA
+Sacramento, CA
+Salt Lake City, UT
+Salt Lake City, UT
+Salt Lake City, UT
+Salt Lake City, UT
+Salt Lake City, UT
+Salt Lake City, UT
+San Antonio, TX
+San Antonio, TX
+San Diego, CA
+San Diego, CA
+San Diego, CA
+San Diego, CA
+San Diego, CA
+San Diego, CA
+San Diego, CA
+San Francisco, CA
+San Francisco, CA
+San Francisco, CA
+San Jose, CA
+Santa Ana, CA
+Santa Ana, CA
+Santa Cruz, CA
+Sauget, IL
+Sayreville, NJ
+Sayreville, NJ
+Sayreville, NJ
+Seattle, WA
+Seattle, WA
+Seattle, WA
+Seattle, WA
+Seattle, WA
+Seattle, WA
+Seattle, WA
+Spokane, WA
+Springfield, MO
+St. Augustine, FL
+St. Louis, MO
+St. Louis, MO
+St. Paul, MN
+St. Paul, MN
+Stroudsburg, PA
+Tampa, FL
+Tampa, FL
+Tampa, FL
+Tempe, AZ
+Toledo, OH
+Tucson, AZ
+Tucson, AZ
+Tucson, AZ
+Tulsa, OK
+Tulsa, OK
+Tulsa, OK
+Upper Darby, PA
+Wantagh, NY
+Washington, DC
+West Hollywood, CA
+West Hollywood, CA
+Westbury, N.Y
+Westbury, NY
+Wilkes-Barre, PA
+Wilmington, DE
+Winston-Salem, NC
+Worcester, MA
+Worcester, MA
+San Diego, CA
+Las Vegas, NV
+Salt Lake City, UT
+Denver, CO
+St. Louis, MO
+Chicago, IL
+Cleveland, OH
+Queens, NY
+Worcester, MA
+Pittsburgh, PA
+Rochester, NY
+Myrtle Beach, SC
+Orlando, FL
+Houston, TX
+Dallas, TX
+Albuquerque, NM
+Tucson, AZ
+Los Angeles, CA
+Duluth, MN
+Sioux City, IA
+Milwaukee, WI
+Cleveland, OH
+Ft. Wayne, IN
+Grand Rapids, MI
+Seattle, WA
+Portland, OR
+Berkeley, CA
+San Francisco, CA
+Los Angeles, CA
+Santa Ana, CA
+San Diego, CA
+Phoenix, AZ
+Albuquerque, NM
+Denver, CO
+Lawrence, KS
+Dallas, TX
+Austin, TX
+Chicago, IL
+Cleveland, OH
+Detroit, MI
+Rochester, NY
+Boston, MA
+New York, NY
+Philadelphia, PA
+Baltimore, MD
+Norfolk, VA
+Jacksonville, NC
+St Petersburg, FL
+Fort Lauderdale, FL
+Atlanta, GA
+Nashville, TN
+New Orleans, LA
+Houston, TX
+San Antonio, TX
+Dallas, TX
+Albuquerque, NM
+Phoenix, AZ
+Fresno, CA
+Anaheim, CA
+Berkeley, CA
+Sacramento, CA
+Denver, CO
+Kansas City, MO
+Sioux Falls, SD
+Minneapolis, MN
+Oshkosh, WI
+Poughkeepsie, NY
+Rochester, NY
+Cleveland, OH
+Pontiac, MI
+Joilet, IL
+Minneapolis, MN
+Merriam, KS
+Denver, CO
+Portland, OR
+Seattle, WA
+San Jose, CA
+Pomona, CA
+Phoenix, AZ
+Tulsa, OK
+Springfield, MO
+Knoxville, TN
+Miami, FL
+Tampa, FL
+Birmingham, AL
+Atlanta, GA
+Jacksonville, FL
+Houston, TX
+Austin, TX
+Dallas, TX
+St. Louis, MO
+Columbus, OH
+Allentown, PA
+Worcester, MA
+Asbury Park, NJ
+Amityville, NY
+San Francisco, CA
+Los Angeles, CA
+Phoenix, AZ
+El Paso, TX
+Dallas, TX
+Austin, TX
+New Orleans, LA
+Birmingham, AL
+Atlanta, GA
+Asheville, NC
+Lexington, KY
+Richmond, VA
+Baltimore, MD
+Brooklyn, NY
+Boston, MA
+Philadelphia, PA
+Hartford, CT
+Detroit, MI
+Chicago, IL
+Kansas City, MO
+Denver, CO
+Salt Lake City, UT
+Ogden, UT
+Salt Lake City, UT
+Mesa, AZ
+San Diego, CA
+Santa Ana, CA
+Los Angeles, CA
+Santa Cruz, CA
+Berkeley, CA
+Portland, OR
+Seattle, WA
+Austin, TX
+Los Angeles, CA
+San Diego, CA
+San Francisco, CA
+Reno, NV
+Las Vegas, NV
+Salt Lake City, UT
+Hartford, CT
+Huntington, NY
+Burlington, VT
+Boston, MA
+Philadelphia, PA
+Wilmington, NC
+Atlanta, GA
+St Petersburg, FL
+Fort Lauderdale, FL
+Jacksonville, FL
+New Orleans, LA
+Houston, TX
+Dallas, TX
+El Paso, TX
+Tempe, AZ
+Los Angeles, CA
+Las Vegas, NV
+San Diego, CA
+Berkeley, CA
+Seattle, WA
+Salt Lake City, UT
+Austin, TX
+Indianapolis, IN
+Cleveland, OH
+New York, NY
+Baltimore, MD
+Chicago, IL
+New Orleans, LA
+El Paso, TX
+Tucson, AZ
+Los Angeles, CA
+San Francisco, CA
+Sacramento, CA
+Portland, OR
+Seattle, WA
+Boise, ID
+Salt Lake City, UT
+Denver, CO
+Kansas City, MO
+Saint Louis, MO
+Chicago, IL
+Columbus, OH
+Pittsburgh, PA
+Philadelphia, PA
+Ithaca, NY
+Brooklyn, NY
+Portland, ME
+Las Vegas, NV
+New York, NY
+San Francisco, CA
+Dallas, TX
+Chicago, IL
+Houston, TX
+Denver, CO
+Los Angeles, CA
+Los Angeles, CA
+San Francisco, CA
+Portland, OR
+Seattle, WA
+Salt Lake City, UT
+Denver, CO
+Des Moines, IA
+Kansas City, MO
+Minneapolis, MN
+Chicago, IL
+Cleveland, OH
+Detroit, MI
+Rochester, NY
+New York, NY
+Silver Spring, MD
+Boston, MA
+Albany, NY
+Philadelphia, PA
+Charlotte, NC
+Spartanburg, SC
+Saint Petersburg, FL
+Atlanta, GA
+Houston, TX
+San Antonio, TX
+Dallas, TX
+Phoenix, AZ
+San Diego, CA
