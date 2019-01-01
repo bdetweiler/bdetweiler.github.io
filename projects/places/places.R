@@ -1494,7 +1494,7 @@ scaled.df <- scaled.df %>% arrange(results) %>% add_column(rank.by.score=rank)
 
 write_csv(scaled.df, 'bdetweiler.github.io/projects/places/rankings.csv')
 
-rank.by.score <- scaled.df %>% arrange(pop2017) %>% select(rank.by.score)
+#rank.by.score <- scaled.df %>% arrange(pop2017) %>% select(rank.by.score)
 
 results <- scaled.df %>% arrange(pop2017) %>% select(results)
 
@@ -1525,11 +1525,15 @@ precip.averages <- data.frame(final.df$jan.precip,
                                final.df$dec.precip) %>% rowMeans()
 
 final.df <- final.df %>% select(-results, -weather.averages, -precip.averages)
-
+final.df
+results
 final.df <- final.df %>% add_column(results=results$results)
 final.df <- final.df %>% add_column(weather.averages=weather.averages)
 final.df <- final.df %>% add_column(precip.averages=precip.averages)
-final.df %>% arrange(rank.by.score) %>% print(n=311)
-final.df
+
+final.df <-  final.df %>% 
+  arrange(results) %>%
+  add_column(rank.by.score=rank)
+
 write_csv(final.df, 'bdetweiler.github.io/projects/places/final.csv')
 

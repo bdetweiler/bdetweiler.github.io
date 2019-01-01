@@ -135,6 +135,7 @@ places.df %>%
 It's no surprise to see New York and Chicago around the top.
 This list is a good starting point but of course I'm not just going to blindly select the first one and move there.
 This approach simply allows me to narrow my search while also looking beyond the usual big 3 of New York/Chicago/LA. Some of these won't even make it past
-the initial phase. I mean, I know for a fact I'm not moving to Columbia, Missouri, even if it is a college town.
+the initial phase.
 
 You can find the code (**Warning**: Really sloppy R code) [here](https://github.com/bdetweiler/bdetweiler.github.io/tree/master/projects/places).
+
