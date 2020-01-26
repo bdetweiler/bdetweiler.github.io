@@ -13,7 +13,7 @@ library(rlist)
 library(knitr)
 knitr::opts_chunk$set(echo = TRUE)
 places.df <- read_csv('/home/bdetweiler/src/Data_Science/bdetweiler.github.io/projects/places/final.csv')
-places.df <- places.df %>% arrange(-pop2017) %>% mutate(rank.by.pop=1:n())
+places.df <- places.df %>% mutate(rank.by.pop=1:n())
 places.df <- places.df %>% mutate(city.state=paste0(city, ", ", state))
 ```
 
@@ -44,7 +44,6 @@ This is a list of 311 cities containing at least 100,000 people according to the
 ### Top 25 Cities by 2017 Population
 ```{r cities.by.population, echo=FALSE}
 places.df %>% 
-  arrange(rank.by.pop) %>%
   select(rank.by.pop, city.state, pop2017) %>% 
   filter(rank.by.pop < 26) %>%
   kable(col.names = c('Rank', 'Location', 'Population 2017'))
